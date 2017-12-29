@@ -6,6 +6,8 @@ Allows to run campaigns in Social Media, such as Twitter. Customer incentives au
 
 # Installation
 mvn compile
+
+
 mvn assembly:single
 
 # Running the code
@@ -16,9 +18,13 @@ ImageAnalyzer.java:
 private static final String API_KEY = "Google Vision API Key"; 
 
 TweetAnalyzer.java:
+
         .setOAuthConsumerKey("*********************")
+
         .setOAuthConsumerSecret("******************************************")
+
         .setOAuthAccessToken("**************************************************")
+
         .setOAuthAccessTokenSecret("******************************************");
 
 UUIDDB:
